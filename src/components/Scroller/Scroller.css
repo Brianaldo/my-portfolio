@@ -1,0 +1,29 @@
+.Scroller {
+  position: fixed;
+  width: 5vw;
+  height: 70vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dot {
+  margin: auto;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.dot:hover {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+}
+
+.active {
+  background-color: green;
+}
