@@ -1,5 +1,40 @@
 .Portfolio1 {
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  text-align: right;
+}
+
+.highlight {
+  margin-left: 11vw;
+  text-align: left;
+  margin-top: -13vh;
+}
+
+.Title {
+  margin-top: 3vh;
+  margin-right: 5vw;
+  margin-bottom: -7vh;
+}
+
+.Portfolio1 > .Title > a {
+    margin: 5px;
+}
+
+.Portfolio1 > .Title > a > svg {
+    width: 40px;
+    height: 40px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.Portfolio1 > .Title > h1 {
+  margin: 0;
+  font-size: 72px;
 }

@@ -8,12 +8,9 @@ const LandingPage = () => {
         <TypeAnimation
           cursor={true}
           sequence={[
-            "Hi, ",
+            "Hi, Welcome to my Portfolio",
             2000,
-            "I’m a student at Bandung Institute of Technology and a future Software Engineer.",
           ]}
-          wrapper="a"
-          repeat={1}
         />
       </div>
     </div>

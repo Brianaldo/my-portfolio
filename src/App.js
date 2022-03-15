@@ -7,16 +7,13 @@ import Portfolio1 from "./pages/3-Portfolio1/Portfolio1";
 import Portfolio2 from "./pages/4-Portfolio2/Portfolio2";
 import Portfolio3 from "./pages/5-Portfolio3/Portfolio3";
 import Contact from "./pages/6-Contact/Contact";
-import { useRef, useState, useEffect, useMemo } from "react";
-import debounce from "lodash.debounce";
-import throttle from "lodash.throttle";
+import { useRef, useState, useEffect } from "react";
 
 function App() {
   const landingPageRef = useRef(null);
   const biodataRef = useRef(null);
   const portfolio1Ref = useRef(null);
   const portfolio2Ref = useRef(null);
-  const portfolio3Ref = useRef(null);
   const contactRef = useRef(null);
 
   const [currY, setCurrY] = useState(window.pageYOffset);
@@ -40,10 +37,8 @@ function App() {
         biodataRef.current.scrollIntoView({ behavior: "smooth" });
       } else if (currY === portfolio2Ref.current.offsetTop) {
         portfolio1Ref.current.scrollIntoView({ behavior: "smooth" });
-      } else if (currY === portfolio3Ref.current.offsetTop) {
-        portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
       } else if (currY === contactRef.current.offsetTop) {
-        portfolio3Ref.current.scrollIntoView({ behavior: "smooth" });
+        portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
       }
     } else {
       // console.log("scroll down");
@@ -54,8 +49,6 @@ function App() {
       } else if (currY === portfolio1Ref.current.offsetTop) {
         portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
       } else if (currY === portfolio2Ref.current.offsetTop) {
-        portfolio3Ref.current.scrollIntoView({ behavior: "smooth" });
-      } else if (currY === portfolio3Ref.current.offsetTop) {
         contactRef.current.scrollIntoView({ behavior: "smooth" });
       } else if (currY === contactRef.current.offsetTop) {
         /* do nothing */
@@ -81,10 +74,8 @@ function App() {
             biodataRef.current.scrollIntoView({ behavior: "smooth" });
           } else if (currY === portfolio2Ref.current.offsetTop) {
             portfolio1Ref.current.scrollIntoView({ behavior: "smooth" });
-          } else if (currY === portfolio3Ref.current.offsetTop) {
-            portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
           } else if (currY === contactRef.current.offsetTop) {
-            portfolio3Ref.current.scrollIntoView({ behavior: "smooth" });
+            portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
           }
         } else {
           console.log("scroll down");
@@ -95,8 +86,6 @@ function App() {
           } else if (currY === portfolio1Ref.current.offsetTop) {
             portfolio2Ref.current.scrollIntoView({ behavior: "smooth" });
           } else if (currY === portfolio2Ref.current.offsetTop) {
-            portfolio3Ref.current.scrollIntoView({ behavior: "smooth" });
-          } else if (currY === portfolio3Ref.current.offsetTop) {
             contactRef.current.scrollIntoView({ behavior: "smooth" });
           } else if (currY === contactRef.current.offsetTop) {
             /* do nothing */
@@ -116,9 +105,6 @@ function App() {
       </div>
       <div ref={portfolio2Ref}>
         <Portfolio2 />
-      </div>
-      <div ref={portfolio3Ref}>
-        <Portfolio3 />
       </div>
       <div ref={contactRef}>
         <Contact />
