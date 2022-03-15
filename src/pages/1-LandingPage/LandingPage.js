@@ -8,7 +8,7 @@ const LandingPage = () => {
         <TypeAnimation
           cursor={true}
           sequence={[
-            "Hi, Welcome to my Portfolio",
+            "Hi, Welcome to my Portfolio.",
             2000,
           ]}
         />

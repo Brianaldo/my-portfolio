@@ -1,5 +1,56 @@
 .Biodata {
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.grid-container {
+    width: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.Big {
+    width: 125px;
+    height: 125px;
+}
+
+.Skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
+.Skills > h2 {
+    width: 20%;
+    margin: 0;
+    margin-top: 10vh;
+    font-size: 36px;
+    text-align: left;
+}
+
+.Profile {
+    width: 100%;
+    text-align: right;
+}
+
+.Profile > h1 {
+    margin: 0;
+    margin-right: 5vw;
+    padding-top: 5vh;
+    font-size: 72px;
+}
+
+.Profile > h2 {
+    margin: 0;
+    margin-right: 5vw;
+    font-size: 36px;
 }

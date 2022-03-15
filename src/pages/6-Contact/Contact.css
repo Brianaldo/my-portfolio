@@ -1,5 +1,73 @@
 .Contact {
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.bigs {
+  width: 250px;
+  height: 250px;
+}
+
+.mediums {
+  width: 150px;
+  height: 150px;
+}
+
+.smalls {
+  width: 75px;
+  height: 75px;
+}
+
+.Contact > h1 {
+  padding-top: 3vh;
+}
+
+.Contact > a {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Contact > a:hover {
+  color: black;
+}
+
+.a1 {
+    position: absolute;
+    top: 450%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.a2 {
+    position: absolute;
+    top: 470%;
+    left: 80%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.a3 {
+    position: absolute;
+    top: 440%;
+    left: 30%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.a4 {
+    position: absolute;
+    top: 440%;
+    left: 90%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.a5 {
+    position: absolute;
+    top: 495%;
+    left: 35%;
+    margin-left: -200px;
+    margin-top: -100px;
 }
