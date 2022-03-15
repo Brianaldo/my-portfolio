@@ -1,5 +1,15 @@
 .LandingPage {
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: transparent;
+}
+
+.LandingPage > .introduction {
+    font-size: 72px;
+    padding-left: 15vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 5vw;
 }
